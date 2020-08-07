@@ -1,0 +1,16 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[Sp_DisableUser] (@Id_Users INT)
+AS
+BEGIN
+    UPDATE USERS
+    SET Active = 0
+    WHERE ID_USER = @Id_Users
+END;
+GO
+
+

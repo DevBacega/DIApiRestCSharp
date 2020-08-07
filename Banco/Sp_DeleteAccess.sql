@@ -1,0 +1,13 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[Sp_DeleteAccess] (@Id_Access INT)
+AS
+BEGIN
+    DELETE
+    FROM ACCESS
+    WHERE Id_Access = @Id_Access
+END;
+GO

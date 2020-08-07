@@ -1,0 +1,15 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[SP_InsertAccess] (@Nm_Access VARCHAR(50))
+AS
+BEGIN
+    INSERT INTO Access
+    VALUES (@Nm_Access)
+END;
+GO
+
+

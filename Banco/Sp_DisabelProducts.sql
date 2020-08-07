@@ -1,0 +1,16 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[Sp_DisableProduct] (@Id_Products INT)
+AS
+BEGIN
+    UPDATE PRODUCT
+    SET Active = 0
+    WHERE ID_PRODUCT = @Id_Products
+END;
+GO
+
+

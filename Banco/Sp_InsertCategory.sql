@@ -1,0 +1,15 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[SP_InsertCategory] (@Ds_Category VARCHAR(50))
+AS
+BEGIN
+    INSERT INTO Category
+    VALUES (@Ds_Category)
+END;
+GO
+
+
