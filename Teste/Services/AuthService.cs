@@ -28,7 +28,7 @@ namespace Teste.Services
                     Id_User = user.Id_User,
                     Nm_User = user.Nm_User,
                     Id_Access = user.Access.Id_Access,
-                    Token = "UmCriptografiaMuitoLoca"
+                    Token = "UmaCriptografiaMuitoLocaAqui"
                 };
 
             return Auth;
